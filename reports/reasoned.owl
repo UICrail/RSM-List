@@ -13,7 +13,7 @@
      xmlns:vann="https://vocab.org/vann/"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://cdm.ovh/rsm/list2">
-        <owl:versionIRI rdf:resource="https://cdm.ovh/rsm/list2/0.1/list2"/>
+        <owl:versionIRI rdf:resource="https://cdm.ovh/rsm/list2/0.2/list2"/>
         <dc:abstract xml:lang="en">This ontology is derived from the ontology developed by Pauwels &amp; Terkaj,  originally published by Drummond et al., with namespace http://www.co-ode.org/ontologies/lists/2008/09/11/list.owl# and available at web location http://owl.cs.manchester.ac.uk/wp-content/uploads/2015/07/list.owl_.txt on 11 December 2015.
 
 The main changes are OWL2 RL compliance and the changed handling of EmptyList, for which an individual is also provided.
@@ -166,12 +166,6 @@ The original terminology was kept.</dc:abstract>
 
     <owl:Class rdf:about="https://w3id.org/list#OWLList">
         <rdfs:subClassOf rdf:resource="https://cdm.ovh/rsm/list2/list2#ListNode"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/list#hasNext"/>
-                <owl:someValuesFrom rdf:resource="https://cdm.ovh/rsm/list2/list2#ListNode"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">OWLList is used to represent linked lists. Instances of OWLList are list elements; they have at most one direct successor (the value of property hasNext).</rdfs:comment>
         <rdfs:label xml:lang="en">OWL list</rdfs:label>
     </owl:Class>
