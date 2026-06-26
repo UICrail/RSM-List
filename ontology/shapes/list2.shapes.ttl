@@ -8,7 +8,7 @@
 
 list:OWLListShape a sh:NodeShape ;
     rdfs:comment "Every OWLList node must have exactly one hasNext successor."@en ;
-    sh:targetClass list:OWLList> ;
+    sh:targetClass list:OWLList ;
     sh:property [
         sh:path list:hasNext> ;
         sh:minCount 1 ;
@@ -18,7 +18,7 @@ list:OWLListShape a sh:NodeShape ;
 
 list:EmptyListShape a sh:NodeShape ;
     rdfs:comment "EmptyList terminators must not have a hasNext successor."@en ;
-    sh:targetClass list:EmptyList> ;
+    sh:targetClass list:EmptyList ;
     sh:property [
         sh:path list:hasNext> ;
         sh:maxCount 0 ;
