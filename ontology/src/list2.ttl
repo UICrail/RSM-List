@@ -1,132 +1,133 @@
 @prefix : <https://cdm.ovh/rsm/list2#> .
-@prefix cc: <http://creativecommons.org/ns#> .
-@prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix list: <https://w3id.org/list#> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix list: <https://cdm.ovh/rsm/list2/list2#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix vann: <http://purl.org/vocab/vann/> .
-@base <https://cdm.ovh/rsm/list2#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix topo: <https://cdm.ovh/rsm/topology/topology#> .
+@prefix vann: <https://vocab.org/vann/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <https://cdm.ovh/rsm/list2> .
 
 <https://cdm.ovh/rsm/list2> rdf:type owl:Ontology ;
-                             owl:versionIRI <https://cdm.ovh/rsm/list2/0.1/> ;
-                             cc:license <http://creativecommons.org/licenses/by/3.0/> ;
-                             dce:creator "this version: Airy Magnien (amagnien@hotmail.fr)" ;
-                             dce:date "12 March 2026" ;
-                             dce:description "A set of entities used to describe the OWL list pattern." ;
-                             dce:language "en" ;
-                             dce:title "List (modified)"@en ;
-                             vann:preferredNamespacePrefix "list" ;
-                             vann:preferredNamespaceUri "https://cdm.ovh/rsm/list2" ;
-                             rdfs:comment """This ontology is derived from the ontology developed by Pauwels & Terkaj,  originally published by Drummond et al., with namespace http://www.co-ode.org/ontologies/lists/2008/09/11/list.owl# and available at web location http://owl.cs.manchester.ac.uk/wp-content/uploads/2015/07/list.owl_.txt on 11 December 2015.
+                             owl:versionIRI <https://cdm.ovh/rsm/list2/0.1/list2> ;
+                             dc:abstract """This ontology is derived from the ontology developed by Pauwels & Terkaj,  originally published by Drummond et al., with namespace http://www.co-ode.org/ontologies/lists/2008/09/11/list.owl# and available at web location http://owl.cs.manchester.ac.uk/wp-content/uploads/2015/07/list.owl_.txt on 11 December 2015.
 
 The main changes are OWL2 RL compliance and the changed handling of EmptyList, for which an individual is also provided.
 
-The original terminology was kept."""@en ,
-                                          "A set of entities used to describe the OWL list pattern. " ;
-                             owl:versionInfo 0.1 ;
-                             prov:wasDerivedFrom <https://w3id.org/list> .
+The original terminology was kept."""@en ;
+                             dc:creator "Airy Magnien" ;
+                             dc:date "26 June 2026"@en ;
+                             dc:title "Linked list ontology"@en ;
+                             dcterms:license "http://creativecommons.org/licenses/by/3.0/"@en ;
+                             rdfs:label "Linked list ontology"@en ;
+                             owl:versionInfo "0.2: minor changes following the update of the GRAPHOL file"@en ;
+                             vann:preferredNamespacePrefix "list" ;
+                             vann:preferredNamespaceURI "https://cdm.ovh/rsm/list2/list2" .
 
 #################################################################
-#    Annotation properties
+#    Annotation properties
 #################################################################
-
-###  http://creativecommons.org/ns#license
-cc:license rdf:type owl:AnnotationProperty .
+
+###  http://purl.org/dc/elements/1.1/abstract
+dc:abstract rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/creator
-dce:creator rdf:type owl:AnnotationProperty .
+dc:creator rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/date
-dce:date rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/description
-dce:description rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/language
-dce:language rdf:type owl:AnnotationProperty .
+dc:date rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/title
-dce:title rdf:type owl:AnnotationProperty .
+dc:title rdf:type owl:AnnotationProperty .
 
 
-###  http://purl.org/vocab/vann/preferredNamespacePrefix
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  https://vocab.org/vann/preferredNamespacePrefix
 vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
 
 
-###  http://purl.org/vocab/vann/preferredNamespaceUri
-vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/ns/prov#wasDerivedFrom
-prov:wasDerivedFrom rdf:type owl:AnnotationProperty .
+###  https://vocab.org/vann/preferredNamespaceURI
+vann:preferredNamespaceURI rdf:type owl:AnnotationProperty .
 
 
 #################################################################
-#    Object Properties
+#    Object Properties
 #################################################################
-
-###  https://cdm.ovh/rsm/list2#hasContents
-:hasContents rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf :hasListProperty ;
-             rdf:type owl:FunctionalProperty ;
-             rdfs:domain :OWLList .
-
-
-###  https://cdm.ovh/rsm/list2#hasListProperty
-:hasListProperty rdf:type owl:ObjectProperty .
+
+###  https://w3id.org/list#hasContents
+<https://w3id.org/list#hasContents> rdf:type owl:ObjectProperty ,
+                                             owl:FunctionalProperty ;
+                                    rdfs:domain <https://w3id.org/list#OWLList> ;
+                                    rdfs:comment "list node contents with arbitrary type"@en ;
+                                    rdfs:label "has contents"@en .
 
 
-###  https://cdm.ovh/rsm/list2#hasNext
-:hasNext rdf:type owl:ObjectProperty ;
-         rdfs:subPropertyOf :isFollowedBy ;
-         rdf:type owl:FunctionalProperty ;
-         rdfs:domain :OWLList ;
-         rdfs:range :ListNode .
+###  https://w3id.org/list#hasNext
+<https://w3id.org/list#hasNext> rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf <https://w3id.org/list#isFollowedBy> ;
+                                rdf:type owl:FunctionalProperty ;
+                                rdfs:domain <https://w3id.org/list#OWLList> ;
+                                rdfs:range list:ListNode ;
+                                rdfs:comment "provides the next element in the list. A functional property with an existential restriction, expressing multiplicity = 1 in an RL-compatible way."@en ;
+                                rdfs:label "has next"@en .
 
 
-###  https://cdm.ovh/rsm/list2#isFollowedBy
-:isFollowedBy rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf :hasListProperty ;
-              rdf:type owl:TransitiveProperty ;
-              rdfs:domain :OWLList ;
-              rdfs:range :ListNode .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  https://cdm.ovh/rsm/list2#EmptyList
-:EmptyList rdf:type owl:Class ;
-           rdfs:subClassOf :ListNode ;
-           owl:disjointWith :OWLList .
-
-
-###  https://cdm.ovh/rsm/list2#ListNode
-:ListNode rdf:type owl:Class .
-
-
-###  https://cdm.ovh/rsm/list2#OWLList
-:OWLList rdf:type owl:Class ;
-         rdfs:subClassOf :ListNode .
+###  https://w3id.org/list#isFollowedBy
+<https://w3id.org/list#isFollowedBy> rdf:type owl:ObjectProperty ,
+                                              owl:TransitiveProperty ;
+                                     rdfs:domain <https://w3id.org/list#OWLList> ;
+                                     rdfs:range list:ListNode ;
+                                     rdfs:comment "transitive closure of has next. Provides all downstream list elements."@en ;
+                                     rdfs:label "is followed by"@en .
 
 
 #################################################################
-#    Individuals
+#    Classes
 #################################################################
+
+###  https://cdm.ovh/rsm/list2/list2#ListNode
+list:ListNode rdf:type owl:Class ;
+              rdfs:comment "superclass for the disjoint OWL list and empty list classes."@en ;
+              rdfs:label "List node"@en .
 
-###  https://cdm.ovh/rsm/list2#emptyList
-:emptyList rdf:type owl:NamedIndividual ,
-                    :EmptyList .
+
+###  https://w3id.org/list#EmptyList
+<https://w3id.org/list#EmptyList> rdf:type owl:Class ;
+                                  rdfs:subClassOf list:ListNode ;
+                                  owl:disjointWith <https://w3id.org/list#OWLList> ;
+                                  rdfs:comment "Instances of EmptyList explicitly finish the list. They have no successor item nor content."@en ;
+                                  rdfs:label "empty list"@en .
 
 
-###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
+###  https://w3id.org/list#OWLList
+<https://w3id.org/list#OWLList> rdf:type owl:Class ;
+                                rdfs:subClassOf list:ListNode ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <https://w3id.org/list#hasNext> ;
+                                                  owl:someValuesFrom owl:Thing
+                                                ] ;
+                                rdfs:comment "OWLList is used to represent linked lists. Instances of OWLList are list elements; they have at most one direct successor (the value of property hasNext)."@en ;
+                                rdfs:label "OWL list"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://cdm.ovh/rsm/list2/list2#emptyList
+list:emptyList rdf:type owl:NamedIndividual ,
+                        <https://w3id.org/list#EmptyList> ;
+               rdfs:label "empty list"@en .
+
+
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

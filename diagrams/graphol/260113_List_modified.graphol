@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <graphol version="3">
-  <project version="https://cdm.ovh/rsm/list_copy/0.1/list_copy" name="List">
-    <ontology addLabelFromUserInput="1" iri="https://cdm.ovh/rsm/list_copy" lang="en" addLabelFromSimpleName="0">
+  <project version="https://cdm.ovh/rsm/list2/0.1/list2" name="List">
+    <ontology addLabelFromSimpleName="0" addLabelFromUserInput="1" iri="https://cdm.ovh/rsm/list2" lang="en">
       <imports/>
       <prefixes>
         <prefix>
@@ -14,7 +14,7 @@
         </prefix>
         <prefix>
           <value>list</value>
-          <namespace>https://w3id.org/list#</namespace>
+          <namespace>https://cdm.ovh/rsm/list2/list2#</namespace>
         </prefix>
         <prefix>
           <value>owl</value>
@@ -289,6 +289,9 @@
           <value>http://www.w3.org/2001/XMLSchema#unsignedShort</value>
         </iri>
         <iri>
+          <value>http://www.w3.org/2002/07/owl#Nothing</value>
+        </iri>
+        <iri>
           <value>http://www.w3.org/2002/07/owl#Thing</value>
         </iri>
         <iri>
@@ -328,7 +331,7 @@
           <value>http://www.w3.org/2004/02/skos/core#definition</value>
         </iri>
         <iri>
-          <value>https://cdm.ovh/rsm/list_copy</value>
+          <value>https://cdm.ovh/rsm/list</value>
           <annotations>
             <annotation>
               <subject>https://cdm.ovh/rsm/localisation/localisation</subject>
@@ -343,11 +346,11 @@
               <subject>https://cdm.ovh/rsm/localisation/localisation</subject>
               <property>http://purl.org/dc/elements/1.1/abstract</property>
               <object>
-                <lexicalForm>This is an attempted representation, using GRAPHOL, of the List ontology published by Pieter Pauwels and Walter Terkaj under https://w3id.org/list
+                <lexicalForm>This ontology is derived from the ontology developed by Pauwels &amp; Terkaj,  originally published by Drummond et al., with namespace http://www.co-ode.org/ontologies/lists/2008/09/11/list.owl# and available at web location http://owl.cs.manchester.ac.uk/wp-content/uploads/2015/07/list.owl_.txt on 11 December 2015.
 
-It is provided for explanatory purpose only.
+The main changes are OWL2 RL compliance and the changed handling of EmptyList, for which an individual is also provided.
 
-In its present state, an exact reproduction of the original TTL file is not guaranteed.</lexicalForm>
+The original terminology was kept.</lexicalForm>
                 <datatype/>
                 <language>en</language>
               </object>
@@ -356,7 +359,7 @@ In its present state, an exact reproduction of the original TTL file is not guar
               <subject>https://cdm.ovh/rsm/localisation/localisation</subject>
               <property>http://purl.org/dc/elements/1.1/date</property>
               <object>
-                <lexicalForm>20 February 2025</lexicalForm>
+                <lexicalForm>26 June 2026</lexicalForm>
                 <datatype/>
                 <language>en</language>
               </object>
@@ -365,7 +368,7 @@ In its present state, an exact reproduction of the original TTL file is not guar
               <subject>https://cdm.ovh/rsm/localisation/localisation</subject>
               <property>http://purl.org/dc/elements/1.1/title</property>
               <object>
-                <lexicalForm>List ontology (copy for explanatory purpose)</lexicalForm>
+                <lexicalForm>Linked list ontology</lexicalForm>
                 <datatype/>
                 <language>en</language>
               </object>
@@ -383,7 +386,7 @@ In its present state, an exact reproduction of the original TTL file is not guar
               <subject>https://cdm.ovh/rsm/localisation/localisation</subject>
               <property>http://www.w3.org/2000/01/rdf-schema#label</property>
               <object>
-                <lexicalForm>List (copy for explanatory purpose)</lexicalForm>
+                <lexicalForm>Linked list ontology</lexicalForm>
                 <datatype/>
                 <language>en</language>
               </object>
@@ -392,16 +395,224 @@ In its present state, an exact reproduction of the original TTL file is not guar
               <subject>https://cdm.ovh/rsm/localisation/localisation</subject>
               <property>http://www.w3.org/2002/07/owl#versionInfo</property>
               <object>
-                <lexicalForm>0.1</lexicalForm>
+                <lexicalForm>0.2: minor changes following the update of the GRAPHOL file</lexicalForm>
                 <datatype/>
-                <language/>
+                <language>en</language>
               </object>
             </annotation>
             <annotation>
               <subject>https://cdm.ovh/rsm/localisation/localisation</subject>
               <property>https://vocab.org/vann/preferredNamespaceURI</property>
               <object>
-                <lexicalForm>https://w3id.org/list#</lexicalForm>
+                <lexicalForm>https://cdm.ovh/rsm/list2/list2</lexicalForm>
+                <datatype/>
+                <language/>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rsm/list2</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rsm/localisation/localisation</subject>
+              <property>http://purl.org/dc/elements/1.1/creator</property>
+              <object>
+                <lexicalForm>Airy Magnien</lexicalForm>
+                <datatype/>
+                <language/>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rsm/localisation/localisation</subject>
+              <property>http://purl.org/dc/elements/1.1/abstract</property>
+              <object>
+                <lexicalForm>This ontology is derived from the ontology developed by Pauwels &amp; Terkaj,  originally published by Drummond et al., with namespace http://www.co-ode.org/ontologies/lists/2008/09/11/list.owl# and available at web location http://owl.cs.manchester.ac.uk/wp-content/uploads/2015/07/list.owl_.txt on 11 December 2015.
+
+The main changes are OWL2 RL compliance and the changed handling of EmptyList, for which an individual is also provided.
+
+The original terminology was kept.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rsm/localisation/localisation</subject>
+              <property>http://purl.org/dc/elements/1.1/date</property>
+              <object>
+                <lexicalForm>26 June 2026</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rsm/localisation/localisation</subject>
+              <property>http://purl.org/dc/elements/1.1/title</property>
+              <object>
+                <lexicalForm>Linked list ontology</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rsm/localisation/localisation</subject>
+              <property>http://purl.org/dc/terms/license</property>
+              <object>
+                <lexicalForm>http://creativecommons.org/licenses/by/3.0/</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rsm/localisation/localisation</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Linked list ontology</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rsm/localisation/localisation</subject>
+              <property>http://www.w3.org/2002/07/owl#versionInfo</property>
+              <object>
+                <lexicalForm>0.2: minor changes following the update of the GRAPHOL file</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rsm/localisation/localisation</subject>
+              <property>https://vocab.org/vann/preferredNamespaceURI</property>
+              <object>
+                <lexicalForm>https://cdm.ovh/rsm/list2/list2</lexicalForm>
+                <datatype/>
+                <language/>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rsm/list2</subject>
+              <property>https://vocab.org/vann/preferredNamespacePrefix</property>
+              <object>
+                <lexicalForm>list</lexicalForm>
+                <datatype/>
+                <language/>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rsm/list2/list2#ListNode</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rsm/list2/list2#ListNode</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>List node</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rsm/list2/list2#ListNode</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>superclass for the disjoint OWL list and empty list classes.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rsm/list2/list2#emptyList</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rsm/list2/list2#emptyList</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>empty list</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rsm/list_copy</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rsm/localisation/localisation</subject>
+              <property>http://purl.org/dc/elements/1.1/creator</property>
+              <object>
+                <lexicalForm>Airy Magnien</lexicalForm>
+                <datatype/>
+                <language/>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rsm/localisation/localisation</subject>
+              <property>http://purl.org/dc/elements/1.1/abstract</property>
+              <object>
+                <lexicalForm>This ontology is derived from the ontology developed by Pauwels &amp; Terkaj,  originally published by Drummond et al., with namespace http://www.co-ode.org/ontologies/lists/2008/09/11/list.owl# and available at web location http://owl.cs.manchester.ac.uk/wp-content/uploads/2015/07/list.owl_.txt on 11 December 2015.
+
+The main changes are OWL2 RL compliance and the changed handling of EmptyList, for which an individual is also provided.
+
+The original terminology was kept.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rsm/localisation/localisation</subject>
+              <property>http://purl.org/dc/elements/1.1/date</property>
+              <object>
+                <lexicalForm>26 June 2026</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rsm/localisation/localisation</subject>
+              <property>http://purl.org/dc/elements/1.1/title</property>
+              <object>
+                <lexicalForm>Linked list ontology</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rsm/localisation/localisation</subject>
+              <property>http://purl.org/dc/terms/license</property>
+              <object>
+                <lexicalForm>http://creativecommons.org/licenses/by/3.0/</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rsm/localisation/localisation</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Linked list ontology</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rsm/localisation/localisation</subject>
+              <property>http://www.w3.org/2002/07/owl#versionInfo</property>
+              <object>
+                <lexicalForm>0.2: minor changes following the update of the GRAPHOL file</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rsm/localisation/localisation</subject>
+              <property>https://vocab.org/vann/preferredNamespaceURI</property>
+              <object>
+                <lexicalForm>https://cdm.ovh/rsm/list2/list2</lexicalForm>
                 <datatype/>
                 <language/>
               </object>
@@ -14927,7 +15138,16 @@ In its present state, an exact reproduction of the original TTL file is not guar
               <subject>https://w3id.org/list#EmptyList</subject>
               <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
               <object>
-                <lexicalForm>Instances of EmptyList explicitly finish the list. They have no successor item, so all corresponding properties take owl:Nothing as value.</lexicalForm>
+                <lexicalForm>Instances of EmptyList explicitly finish the list. They have no successor item nor content.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/list#EmptyList</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>empty list</lexicalForm>
                 <datatype/>
                 <language>en</language>
               </object>
@@ -14946,22 +15166,88 @@ In its present state, an exact reproduction of the original TTL file is not guar
                 <language>en</language>
               </object>
             </annotation>
+            <annotation>
+              <subject>https://w3id.org/list#OWLList</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>OWL list</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
           </annotations>
         </iri>
         <iri>
           <value>https://w3id.org/list#hasContents</value>
           <functional/>
-        </iri>
-        <iri>
-          <value>https://w3id.org/list#hasListProperty</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/list#hasContents</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>has contents</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/list#hasContents</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>list node contents with arbitrary type</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
         </iri>
         <iri>
           <value>https://w3id.org/list#hasNext</value>
           <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/list#hasNext</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>has next</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/list#hasNext</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>provides the next element in the list. A functional property with an existential restriction, expressing multiplicity = 1 in an RL-compatible way.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
         </iri>
         <iri>
           <value>https://w3id.org/list#isFollowedBy</value>
           <transitive/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/list#isFollowedBy</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>is followed by</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/list#isFollowedBy</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>transitive closure of has next. Provides all downstream list elements.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
         </iri>
         <iri>
           <value>urn:x-graphol:origin</value>
@@ -14969,129 +15255,128 @@ In its present state, an exact reproduction of the original TTL file is not guar
       </iris>
     </ontology>
     <diagrams>
-      <diagram height="5000" name="List" width="5000">
-        <node color="#c2b078" id="n1" type="role">
-          <geometry height="50" x="100" y="-120" width="70"/>
+      <diagram width="5000" height="5000" name="List">
+        <node type="role" color="#fcfcfc" id="n1">
+          <geometry width="70" height="50" x="-50" y="-120"/>
           <iri>https://w3id.org/list#isFollowedBy</iri>
-          <label height="23" x="100" y="-150" customSize="0" size="12" width="97"/>
+          <label width="78" size="12" height="23" customSize="0" x="-50" y="-150"/>
         </node>
-        <node color="#c2b078" id="n18" type="concept">
-          <geometry height="50" x="-260" y="80" width="110"/>
+        <node type="concept" color="#fcfcfc" id="n18">
+          <geometry width="110" height="50" x="-490" y="-40"/>
           <iri>https://w3id.org/list#EmptyList</iri>
-          <label height="23" x="-260" y="80" customSize="0" size="12" width="110"/>
+          <label width="110" size="12" height="23" customSize="0" x="-490" y="-40"/>
         </node>
-        <node color="#c2b078" id="n2" type="role">
-          <geometry height="50" x="190" y="150" width="70"/>
+        <node type="role" color="#fcfcfc" id="n2">
+          <geometry width="70" height="50" x="-50" y="40"/>
           <iri>https://w3id.org/list#hasContents</iri>
-          <label height="23" x="190" y="120" customSize="0" size="12" width="94"/>
+          <label width="75" size="12" height="23" customSize="0" x="-50" y="10"/>
         </node>
-        <node color="#c2b078" id="n3" type="role">
-          <geometry height="50" x="100" y="-220" width="70"/>
-          <iri>https://w3id.org/list#hasListProperty</iri>
-          <label height="23" x="100" y="-250" customSize="0" size="12" width="110"/>
-        </node>
-        <node color="#fcfcfc" id="n33" type="intersection">
-          <geometry height="30" x="-140" y="80" width="50"/>
-          <label height="23" x="-140" y="80" customSize="0" size="12" width="27"/>
-        </node>
-        <node color="#fcfcfc" id="n34" type="complement">
-          <geometry height="30" x="-70" y="30" width="50"/>
-          <label height="23" x="-70" y="30" customSize="0" size="12" width="25"/>
-        </node>
-        <node color="#fcfcfc" id="n36" type="complement">
-          <geometry height="30" x="-70" y="120" width="50"/>
-          <label height="23" x="-70" y="120" customSize="0" size="12" width="25"/>
-        </node>
-        <node color="#fcfcfc" id="n39" type="domain-restriction">
-          <geometry height="20" x="0" y="-30" width="20"/>
-          <label height="23" x="0" y="-52" customSize="0" size="12" width="39">exists</label>
-        </node>
-        <node color="#c2b078" id="n4" type="concept">
-          <geometry height="50" x="-260" y="-170" width="110"/>
+        <node type="concept" color="#fcfcfc" id="n4">
+          <geometry width="110" height="50" x="-290" y="-40"/>
           <iri>https://w3id.org/list#OWLList</iri>
-          <label height="23" x="-260" y="-170" customSize="0" size="12" width="110"/>
+          <label width="110" size="12" height="23" customSize="0" x="-290" y="-40"/>
         </node>
-        <node color="#fcfcfc" id="n40" type="domain-restriction">
-          <geometry height="20" x="0" y="150" width="20"/>
-          <label height="23" x="0" y="128" customSize="0" size="12" width="39">exists</label>
+        <node type="individual" color="#fcfcfc" id="n41">
+          <geometry width="80" height="60" x="-490" y="50"/>
+          <iri>https://cdm.ovh/rsm/list2/list2#emptyList</iri>
+          <label width="80" size="12" height="23" customSize="0" x="-490" y="50"/>
         </node>
-        <node color="#c2b078" id="n6" type="role">
-          <geometry height="50" x="100" y="0" width="70"/>
+        <node type="concept" color="#fcfcfc" id="n42">
+          <geometry width="110" height="50" x="-400" y="-250"/>
+          <iri>https://cdm.ovh/rsm/list2/list2#ListNode</iri>
+          <label width="110" size="12" height="23" customSize="0" x="-400" y="-250"/>
+        </node>
+        <node type="disjoint-union" color="#000000" id="n43">
+          <geometry width="50" height="30" x="-400" y="-130"/>
+        </node>
+        <node type="domain-restriction" color="#fcfcfc" id="n44">
+          <geometry width="20" height="20" x="-160" y="40"/>
+          <label width="39" size="12" height="23" customSize="0" x="-160" y="18">exists</label>
+        </node>
+        <node type="domain-restriction" color="#fcfcfc" id="n45">
+          <geometry width="20" height="20" x="-160" y="-40"/>
+          <label width="39" size="12" height="23" customSize="0" x="-160" y="-62">exists</label>
+        </node>
+        <node type="range-restriction" color="#000000" id="n46">
+          <geometry width="20" height="20" x="60" y="-40"/>
+          <label width="39" size="12" height="23" customSize="0" x="60" y="-62">exists</label>
+        </node>
+        <node type="domain-restriction" color="#fcfcfc" id="n47">
+          <geometry width="20" height="20" x="-160" y="-120"/>
+          <label width="39" size="12" height="23" customSize="0" x="-160" y="-142">exists</label>
+        </node>
+        <node type="range-restriction" color="#000000" id="n48">
+          <geometry width="20" height="20" x="60" y="-120"/>
+          <label width="39" size="12" height="23" customSize="0" x="60" y="-142">exists</label>
+        </node>
+        <node type="role" color="#fcfcfc" id="n6">
+          <geometry width="70" height="50" x="-50" y="-40"/>
           <iri>https://w3id.org/list#hasNext</iri>
-          <label height="23" x="100" y="-30" customSize="0" size="12" width="70"/>
+          <label width="52" size="12" height="23" customSize="0" x="-50" y="-70"/>
         </node>
-        <node color="#fcfcfc" id="n7" type="domain-restriction">
-          <geometry height="20" x="10" y="-220" width="20"/>
-          <label height="23" x="10" y="-242" customSize="0" size="12" width="39">exists</label>
-        </node>
-        <node color="#000000" id="n8" type="range-restriction">
-          <geometry height="20" x="10" y="-120" width="20"/>
-          <label height="23" x="10" y="-142" customSize="0" size="12" width="39">exists</label>
-        </node>
-        <edge source="n6" id="e1" target="n1" type="inclusion">
-          <point x="100" y="0"/>
-          <point x="100" y="-120"/>
+        <edge source="n6" type="inclusion" target="n1" id="e1">
+          <point x="-50" y="-40"/>
+          <point x="-50" y="-120"/>
         </edge>
-        <edge source="n2" id="e10" target="n3" type="inclusion">
-          <point x="190" y="150"/>
-          <point x="190" y="-170"/>
-          <point x="100" y="-220"/>
+        <edge source="n41" type="membership" target="n18" id="e104">
+          <point x="-490" y="50"/>
+          <point x="-490" y="-40"/>
         </edge>
-        <edge source="n18" id="e102" target="n4" type="inclusion">
-          <point x="-260" y="80"/>
-          <point x="-260" y="-170"/>
+        <edge source="n43" type="inclusion" target="n42" id="e106">
+          <point x="-400" y="-130"/>
+          <point x="-400" y="-250"/>
         </edge>
-        <edge source="n18" id="e103" target="n33" type="inclusion">
-          <point x="-260" y="80"/>
-          <point x="-140" y="80"/>
+        <edge source="n4" type="input" target="n43" id="e108">
+          <point x="-290" y="-40"/>
+          <point x="-400" y="-130"/>
         </edge>
-        <edge source="n1" id="e2" target="n3" type="inclusion">
-          <point x="100" y="-120"/>
-          <point x="100" y="-220"/>
+        <edge source="n18" type="input" target="n43" id="e109">
+          <point x="-490" y="-40"/>
+          <point x="-400" y="-130"/>
         </edge>
-        <edge source="n3" id="e4" target="n7" type="input">
-          <point x="100" y="-220"/>
-          <point x="10" y="-220"/>
+        <edge source="n44" type="inclusion" target="n4" id="e110">
+          <point x="-160" y="40"/>
+          <point x="-290" y="-40"/>
         </edge>
-        <edge source="n7" id="e5" target="n4" type="inclusion">
-          <point x="10" y="-220"/>
-          <point x="-260" y="-170"/>
+        <edge source="n2" type="input" target="n44" id="e111">
+          <point x="-50" y="40"/>
+          <point x="-160" y="40"/>
         </edge>
-        <edge source="n1" id="e6" target="n8" type="input">
-          <point x="100" y="-120"/>
-          <point x="10" y="-120"/>
+        <edge source="n6" type="input" target="n45" id="e113">
+          <point x="-50" y="-40"/>
+          <point x="-160" y="-40"/>
         </edge>
-        <edge source="n8" id="e7" target="n4" type="inclusion">
-          <point x="10" y="-120"/>
-          <point x="-260" y="-170"/>
+        <edge source="n46" type="inclusion" target="n42" id="e114">
+          <point x="60" y="-40"/>
+          <point x="130" y="-40"/>
+          <point x="130" y="-250"/>
+          <point x="-400" y="-250"/>
         </edge>
-        <edge source="n1" id="e82" target="n39" type="input">
-          <point x="100" y="-120"/>
-          <point x="0" y="-30"/>
+        <edge source="n6" type="input" target="n46" id="e115">
+          <point x="-50" y="-40"/>
+          <point x="60" y="-40"/>
         </edge>
-        <edge source="n4" id="e86" target="n39" type="input">
-          <point x="-260" y="-170"/>
-          <point x="0" y="-30"/>
+        <edge source="n47" type="inclusion" target="n4" id="e116">
+          <point x="-160" y="-120"/>
+          <point x="-290" y="-40"/>
         </edge>
-        <edge source="n2" id="e90" target="n40" type="input">
-          <point x="190" y="150"/>
-          <point x="0" y="150"/>
+        <edge source="n1" type="input" target="n47" id="e117">
+          <point x="-50" y="-120"/>
+          <point x="-160" y="-120"/>
         </edge>
-        <edge source="n39" id="e94" target="n34" type="input">
-          <point x="0" y="-30"/>
-          <point x="-70" y="30"/>
+        <edge source="n48" type="inclusion" target="n42" id="e118">
+          <point x="60" y="-120"/>
+          <point x="110" y="-120"/>
+          <point x="110" y="-250"/>
+          <point x="-400" y="-250"/>
         </edge>
-        <edge source="n40" id="e95" target="n36" type="input">
-          <point x="0" y="150"/>
-          <point x="-70" y="120"/>
+        <edge source="n1" type="input" target="n48" id="e119">
+          <point x="-50" y="-120"/>
+          <point x="60" y="-120"/>
         </edge>
-        <edge source="n34" id="e96" target="n33" type="input">
-          <point x="-70" y="30"/>
-          <point x="-140" y="80"/>
-        </edge>
-        <edge source="n36" id="e97" target="n33" type="input">
-          <point x="-70" y="120"/>
-          <point x="-140" y="80"/>
+        <edge source="n45" type="equivalence" target="n4" id="e120">
+          <point x="-160" y="-40"/>
+          <point x="-290" y="-40"/>
         </edge>
       </diagram>
     </diagrams>
