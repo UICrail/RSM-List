@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <graphol version="3">
-  <project version="https://cdm.ovh/rsm/list2/0.1/list2" name="List">
+  <project version="https://cdm.ovh/rsm/list2/0.2/list2" name="List">
     <ontology addLabelFromSimpleName="0" addLabelFromUserInput="1" iri="https://cdm.ovh/rsm/list2" lang="en">
       <imports/>
       <prefixes>
@@ -15374,7 +15374,7 @@ In its present state, an exact reproduction of the original TTL file is not guar
           <point x="-50" y="-120"/>
           <point x="60" y="-120"/>
         </edge>
-        <edge source="n45" type="equivalence" target="n4" id="e120">
+        <edge source="n45" type="inclusion" target="n4" id="e121">
           <point x="-160" y="-40"/>
           <point x="-290" y="-40"/>
         </edge>

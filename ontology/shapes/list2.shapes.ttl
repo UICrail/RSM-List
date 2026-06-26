@@ -1,0 +1,25 @@
+@prefix list: <https://cdm.ovh/rsm/list2/list2#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+# SHACL carries constraints that OWL 2 RL cannot place on the superclass side of SubClassOf
+# (e.g. ObjectSomeValuesFrom / owl:someValuesFrom).
+
+list:OWLListShape a sh:NodeShape ;
+    rdfs:comment "Every OWLList node must have exactly one hasNext successor."@en ;
+    sh:targetClass <https://w3id.org/list#OWLList> ;
+    sh:property [
+        sh:path <https://w3id.org/list#hasNext> ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class list:ListNode ;
+    ] .
+
+list:EmptyListShape a sh:NodeShape ;
+    rdfs:comment "EmptyList terminators must not have a hasNext successor."@en ;
+    sh:targetClass <https://w3id.org/list#EmptyList> ;
+    sh:property [
+        sh:path <https://w3id.org/list#hasNext> ;
+        sh:maxCount 0 ;
+    ] .
