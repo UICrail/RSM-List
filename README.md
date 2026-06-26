@@ -15,3 +15,21 @@ The original terminology was kept.
 It is based on a linked list paradigm, by which any element has a successor, and possibly a payload.
 
 An "empty list" individual is provided to close the list, if desired.
+
+# Closed list?
+
+The OWL ontology does not require each list node (except the terminal 'empty list') to have a successor. This is because the OWL2 RL profile excludes existential restrictions in superclass expressions.
+
+If it is necessary to enforce closed lists, the user may use any of the solutions below:
+
+* add the existential restriction and accept OWL2 DL compliance;
+* use the provided SHACL shape;
+* state that non-functional property isFollowedBy (the transitive closure of hasNext) has value, inter alia, emptyList:
+
+list:OWLList rdfs:subClassOf
+    [ rdf:type owl:Restriction ;
+      owl:onProperty list:isFollowedBy> ;
+      owl:hasValue list:emptyList
+    ] .
+
+Latter formulation is definitely RL-compliant, but we leave it to the user to enforce list closure.
