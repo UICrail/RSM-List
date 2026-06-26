@@ -1,12 +1,11 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_label	https://cdm.ovh/rsm/list2#EmptyList	rdfs:label	
-ERROR	missing_label	https://cdm.ovh/rsm/list2#OWLList	rdfs:label	
-ERROR	missing_label	https://cdm.ovh/rsm/list2#hasContents	rdfs:label	
-ERROR	missing_label	https://cdm.ovh/rsm/list2#hasNext	rdfs:label	
-ERROR	missing_label	https://cdm.ovh/rsm/list2#isFollowedBy	rdfs:label	
-ERROR	missing_ontology_license	https://cdm.ovh/rsm/list2	dc:license	
-WARN	missing_definition	https://cdm.ovh/rsm/list2#EmptyList	IAO:0000115	
-WARN	missing_definition	https://cdm.ovh/rsm/list2#OWLList	IAO:0000115	
-WARN	missing_definition	https://cdm.ovh/rsm/list2#hasContents	IAO:0000115	
-WARN	missing_definition	https://cdm.ovh/rsm/list2#hasNext	IAO:0000115	
-WARN	missing_definition	https://cdm.ovh/rsm/list2#isFollowedBy	IAO:0000115	
+ERROR	duplicate_label	https://cdm.ovh/rsm/list2/list2#emptyList	rdfs:label	empty list@en
+ERROR	duplicate_label	https://w3id.org/list#EmptyList	rdfs:label	empty list@en
+ERROR	missing_ontology_description	https://cdm.ovh/rsm/list2	dc:description	
+WARN	missing_definition	https://cdm.ovh/rsm/list2/list2#ListNode	IAO:0000115	
+WARN	missing_definition	https://w3id.org/list#EmptyList	IAO:0000115	
+WARN	missing_definition	https://w3id.org/list#OWLList	IAO:0000115	
+WARN	missing_definition	https://w3id.org/list#hasContents	IAO:0000115	
+WARN	missing_definition	https://w3id.org/list#hasNext	IAO:0000115	
+WARN	missing_definition	https://w3id.org/list#isFollowedBy	IAO:0000115	
+INFO	missing_superclass	https://cdm.ovh/rsm/list2/list2#ListNode	rdfs:subClassOf	
