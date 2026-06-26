@@ -108,6 +108,7 @@
         <annotationProperty>http://purl.org/dc/elements/1.1/contributor</annotationProperty>
         <annotationProperty>http://purl.org/dc/elements/1.1/creator</annotationProperty>
         <annotationProperty>http://purl.org/dc/elements/1.1/date</annotationProperty>
+        <annotationProperty>http://purl.org/dc/elements/1.1/description</annotationProperty>
         <annotationProperty>http://purl.org/dc/elements/1.1/relation</annotationProperty>
         <annotationProperty>http://purl.org/dc/elements/1.1/title</annotationProperty>
         <annotationProperty>http://purl.org/dc/elements/1.1/type</annotationProperty>
@@ -140,6 +141,9 @@
         </iri>
         <iri>
           <value>http://purl.org/dc/elements/1.1/date</value>
+        </iri>
+        <iri>
+          <value>http://purl.org/dc/elements/1.1/description</value>
         </iri>
         <iri>
           <value>http://purl.org/dc/elements/1.1/relation</value>
@@ -344,7 +348,7 @@
             </annotation>
             <annotation>
               <subject>https://cdm.ovh/rsm/localisation/localisation</subject>
-              <property>http://purl.org/dc/elements/1.1/abstract</property>
+              <property>http://purl.org/dc/elements/1.1/description</property>
               <object>
                 <lexicalForm>This ontology is derived from the ontology developed by Pauwels &amp; Terkaj,  originally published by Drummond et al., with namespace http://www.co-ode.org/ontologies/lists/2008/09/11/list.owl# and available at web location http://owl.cs.manchester.ac.uk/wp-content/uploads/2015/07/list.owl_.txt on 11 December 2015.
 
@@ -425,7 +429,7 @@ The original terminology was kept.</lexicalForm>
             </annotation>
             <annotation>
               <subject>https://cdm.ovh/rsm/localisation/localisation</subject>
-              <property>http://purl.org/dc/elements/1.1/abstract</property>
+              <property>http://purl.org/dc/elements/1.1/description</property>
               <object>
                 <lexicalForm>This ontology is derived from the ontology developed by Pauwels &amp; Terkaj,  originally published by Drummond et al., with namespace http://www.co-ode.org/ontologies/lists/2008/09/11/list.owl# and available at web location http://owl.cs.manchester.ac.uk/wp-content/uploads/2015/07/list.owl_.txt on 11 December 2015.
 
@@ -552,7 +556,7 @@ The original terminology was kept.</lexicalForm>
             </annotation>
             <annotation>
               <subject>https://cdm.ovh/rsm/localisation/localisation</subject>
-              <property>http://purl.org/dc/elements/1.1/abstract</property>
+              <property>http://purl.org/dc/elements/1.1/description</property>
               <object>
                 <lexicalForm>This ontology is derived from the ontology developed by Pauwels &amp; Terkaj,  originally published by Drummond et al., with namespace http://www.co-ode.org/ontologies/lists/2008/09/11/list.owl# and available at web location http://owl.cs.manchester.ac.uk/wp-content/uploads/2015/07/list.owl_.txt on 11 December 2015.
 
@@ -15147,7 +15151,7 @@ In its present state, an exact reproduction of the original TTL file is not guar
               <subject>https://w3id.org/list#EmptyList</subject>
               <property>http://www.w3.org/2000/01/rdf-schema#label</property>
               <object>
-                <lexicalForm>empty list</lexicalForm>
+                <lexicalForm>Empty list</lexicalForm>
                 <datatype/>
                 <language>en</language>
               </object>
