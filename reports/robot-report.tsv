@@ -1,7 +1,4 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	duplicate_label	https://cdm.ovh/rsm/list2/list2#emptyList	rdfs:label	empty list@en
-ERROR	duplicate_label	https://w3id.org/list#EmptyList	rdfs:label	empty list@en
-ERROR	missing_ontology_description	https://cdm.ovh/rsm/list2	dc:description	
 WARN	missing_definition	https://cdm.ovh/rsm/list2/list2#ListNode	IAO:0000115	
 WARN	missing_definition	https://w3id.org/list#EmptyList	IAO:0000115	
 WARN	missing_definition	https://w3id.org/list#OWLList	IAO:0000115	
